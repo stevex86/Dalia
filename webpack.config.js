@@ -26,6 +26,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(glsl|vs|fs)$/,
+        use: ['ts-shader-loader']
       }
     ]
   },
